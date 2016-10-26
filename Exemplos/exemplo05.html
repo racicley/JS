@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> JavaScript 05 </title>
+<style type="text/css">
+	
+	body{background-color:#000}
+	#imagem {display:block;margin:20px auto;}
+	
+</style>
+
+<script type="text/javascript">
+	function ligar(){
+		document.getElementById("imagem").src = "img/lampadas_a.jpg";
+	}
+	
+	function desligar(){
+		document.getElementById("imagem").src = "img/lampadas.jpg";
+	}
+</script>
+
+</head>
+<body>
+	<img id="imagem" src="img/lampadas.jpg" />
+	
+	<button onclick = ligar();>Clique para ligar</button> 
+	<button onclick = desligar(); >Clique para desligar</button>
+</body>
+</html>
